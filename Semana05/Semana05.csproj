@@ -118,5 +118,11 @@
       <Name>Entity</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="eva01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="snek.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Semana05"
         mc:Ignorable="d"
-        Title="ManCategoria" Height="250" Width="400">
+        Background="{DynamicResource backgroundImage}"
+        Title="ManCategoria" Height="180" Width="380">
     <Window.Resources>
+        <ImageSource x:Key="imgSource">eva01.png</ImageSource>
+        <ImageBrush x:Key="backgroundImage" ImageSource="{DynamicResource imgSource}" Opacity="0.89"></ImageBrush>
         <Style TargetType="Label">
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="FontFamily" Value="Segoe UI"/>
@@ -16,23 +19,23 @@
     <Grid>
         <StackPanel>
             <StackPanel>
-                <Label Content="Agregando datos" />
+                <Label Foreground="White" Content="Agregando datos" />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label Content="ID" Width="100"/>
-                <Label Name="lblID" Width="100" />
+                <Label Margin="15,0,0,0" Foreground="White" Content="ID" Width="100"/>
+                <Label Foreground="White" Name="lblID" Width="100" />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label  Content="Nombre" Width="100" />
-                <TextBox Name="txtNombre" Width="250" MaxLength="100" />
+                <Label Margin="15,0,0,0" Foreground="White" Content="Nombre" Width="100" />
+                <TextBox Name="txtNombre" Width="230" MaxLength="100" />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Label  Content="Descripcion" Width="100"/>
-                <TextBox Name="txtDescripcion" Width="250" MaxLength="100" />
+                <Label Margin="15,0,0,0" Foreground="White" Content="Descripcion" Width="100"/>
+                <TextBox Name="txtDescripcion" Width="230" MaxLength="100" />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Button x:Name="btnGrabar" Click="BntGrabar_Click">Grabar</Button> 
-                <Button x:Name="btnCerrar" Click="BntCerrar_Click"  >Cerrar</Button>
+                <Button x:Name="btnGrabar" Margin="130,5,50,0" Click="BntGrabar_Click">Grabar</Button>
+                <Button x:Name="btnCerrar" Margin="0,5,0,0" Click="BntCerrar_Click"  >Cerrar</Button>
             </StackPanel>
         </StackPanel>
     </Grid>

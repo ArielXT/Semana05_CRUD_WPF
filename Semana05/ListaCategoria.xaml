@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Semana05"
         mc:Ignorable="d"
+        Background="{DynamicResource backgroundImage}"
         Title="ListaCategoria" Height="450" Width="800">
     <Window.Resources>
+        <ImageSource x:Key="imgSource">snek.jpg</ImageSource>
+        <ImageBrush x:Key="backgroundImage" ImageSource="{DynamicResource imgSource}" Opacity="0.89"></ImageBrush>
         <Style TargetType="Label">
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="FontFamily" Value="Comic Sans MS"/>
@@ -16,7 +19,7 @@
     <Grid>
         <StackPanel>
             <StackPanel>
-                <Label Content="LISTA DE CATEGORÍAS" />
+                <Label Foreground="White" Content="LISTA DE CATEGORÍAS" />
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Button x:Name="btnConsultar" Click="BtnConsultar_Click" >Consultar</Button>
